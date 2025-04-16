@@ -68,11 +68,9 @@ async function translate(text, from, to, options) {
     if (!result) {
       throw new Error("No result generated from streaming response.");
     }
-
     if (setResult) {
       setResult(result);
     }
-
     return result;
   } catch (error) {
     throw new Error(`Translation failed: ${error.message}`);
