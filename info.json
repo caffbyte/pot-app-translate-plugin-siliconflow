@@ -1,10 +1,25 @@
 {
-  "id": "plugin.com.pot-app.lingva",
+  "id": "plugin.com.caffbyte.siliconflow",
   "plugin_type": "translate",
-  "icon": "lingva.svg",
-  "display": "Lingva",
-  "homepage": "https://github.com/pot-app/pot-app-translate-plugin-template",
-  "needs": [{ "key": "requestPath", "display": "请求地址" }],
+  "icon": "siliconflow.svg",
+  "display": "SiliconFlow",
+  "homepage": "https://github.com/caffbyte/pot-app-translate-plugin-siliconflow",
+  "needs": [
+    {
+      "key": "apiKey",
+      "display": "API Key",
+      "type": "input"
+    },
+    {
+      "key": "model",
+      "display": "模型",
+      "type": "select",
+      "options": {
+        "deepseek-ai/DeepSeek-V3": "deepseek-ai/DeepSeek-V3",
+        "Qwen/QwQ-32B": "Qwen/QwQ-32B"
+      }
+    }
+  ],
   "language": {
     "auto": "auto",
     "zh_cn": "zh",
